@@ -4,7 +4,7 @@
 
 Most budgeting apps only record what you already spent. Runway lets you **simulate a decision before you make it** and shows how it changes your balance, daily allowance, month-end forecast, savings goals, financial risk and health score, all at once.
 
-**Live demo:** _add your Netlify/Vercel link here_
+**Live demo:** [_add your Netlify/Vercel link here_](https://finance-genz.netlify.app/)
 
 ---
 
