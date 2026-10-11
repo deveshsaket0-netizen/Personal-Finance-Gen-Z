@@ -1,0 +1,92 @@
+/* Design tokens: “The Receipt” */
+:root {
+  /* Paper */
+  --paper-bg: #F6F0E4;
+  --paper-card: #FFFBF2;
+  --paper-card-subtle: #EFE8D8;
+  --paper-card-accent: #FFFDF8;
+
+  /* Ink */
+  --ink: #1B1B1B;
+  --ink-mute: #5A5448;
+  --ink-faint: #8E8779;
+  --ink-rule: #D8CEBC;
+
+  /* Marigold (Accent Fill) */
+  --marigold: #F2A900;
+  --marigold-hover: #D99600;
+  --marigold-faint: rgba(242, 169, 0, 0.18);
+
+  /* Status (Verified >= 4.5:1 on paper) */
+  --status-safe: #1F6B43;
+  --status-safe-bg: rgba(31, 107, 67, 0.12);
+  --status-watch: #8A5A00;
+  --status-watch-bg: rgba(138, 90, 0, 0.12);
+  --status-danger: #C23A22;
+  --status-danger-bg: rgba(194, 58, 34, 0.12);
+
+  /* Shape */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --border-ink: 2px solid var(--ink);
+  --border-rule: 1px dashed var(--ink-rule);
+  --border-faint: 1px solid var(--ink-rule);
+
+  /* Flat Offset Shadows (No blur, crisp paper edges) */
+  --shadow-sm: 2px 2px 0 var(--ink);
+  --shadow-md: 3px 3px 0 var(--ink);
+  --shadow-lg: 4px 4px 0 var(--ink);
+  --shadow-btn: 2px 2px 0 var(--ink);
+  --shadow-btn-active: 0 0 0 var(--ink);
+
+  /* Typography */
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* Spacing Scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+}
+
+/* Dark variant: warm charcoal with cream text behind prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper-bg: #1E1B16;
+    --paper-card: #28241E;
+    --paper-card-subtle: #332E27;
+    --paper-card-accent: #2D2923;
+
+    --ink: #F6F0E4;
+    --ink-mute: #B2A998;
+    --ink-faint: #787163;
+    --ink-rule: #3D372F;
+
+    --marigold: #F2A900;
+    --marigold-hover: #FFB81C;
+    --marigold-faint: rgba(242, 169, 0, 0.22);
+
+    --status-safe: #34D399;
+    --status-safe-bg: rgba(52, 211, 153, 0.16);
+    --status-watch: #FBBF24;
+    --status-watch-bg: rgba(251, 191, 36, 0.16);
+    --status-danger: #F87171;
+    --status-danger-bg: rgba(248, 113, 113, 0.16);
+
+    --border-ink: 2px solid var(--ink);
+    --border-rule: 1px dashed var(--ink-rule);
+    --border-faint: 1px solid var(--ink-rule);
+
+    --shadow-sm: 2px 2px 0 var(--ink);
+    --shadow-md: 3px 3px 0 var(--ink);
+    --shadow-lg: 4px 4px 0 var(--ink);
+    --shadow-btn: 2px 2px 0 var(--ink);
+  }
+}
